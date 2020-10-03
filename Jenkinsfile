@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Lint HTML') {
+    stage('Lint python') {
       steps {
-        sh 'tidy -q -e --drop-empty-elements no ./*.html'
+        sh 'tidy -q -e --drop-empty-elements no ./*.py'
       }
     }
 
